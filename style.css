@@ -1,0 +1,92 @@
+@import url(https://db.onlinewebfonts.com/c/1ccdd11fd9d1d81756c40d7acb17d0aa?family=Circular+Spotify+Tx+T+Light);
+
+* {
+    font-family: "Circular Spotify Tx T Light";
+}
+
+.download{
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+.prograss {
+    margin: 0;
+    background: #ddd;
+    width: 100%;
+    height: 2px;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+#prograss-fill {
+    background: dodgerblue;
+    height: 100%;
+    width: 0%;
+    border-radius: 0;
+}
+
+.tab {
+    position: relative;
+}
+
+.tab * {
+    transition: all 1s;
+}
+
+.tab:hover .lable {
+    opacity: 1;
+    bottom: 6%;
+}
+
+.tab:hover .icon {
+    transform: translateY(-50%);
+    background: dodgerblue;
+    outline: 0.3rem solid white;
+}
+
+.icon {
+    position: relative;
+    overflow: visible;
+}
+
+.lable {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    font-size: 0.8rem;
+    padding: 4px;
+}
+.test * {
+    transition : all 1s ;
+}
+.test::after, .test::before{
+    opacity:0;
+    transition: all 1s ;
+    left: 100%;
+    top: -1;
+}
+.tab:hover .test::after {
+    content: ' ';
+    background: dodgerblue;
+    height: 20px;
+    width: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: -35.7%;
+    z-index: 1000;
+    box-shadow: 3px -3px 0px white;
+    opacity: 1;
+}
+.tab:hover .test::before {
+    content: ' ';
+    background: dodgerblue;
+    height: 20px;
+    width: 20px;
+    border-top-left-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: -31%;
+    z-index: 1000;
+    box-shadow: -3px -3px 0px white;
+    opacity: 1;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="bg-white h-[100vh]  relative overflow-hidden shadow-lg border">
+        <div class="bg-[dodgerblue] px-6 py-4 text-white font-light text-xl md:text-2xl flex items-center justify-between">
+            <ion-icon name="menu-outline"></ion-icon>
+            <p class="w-full text-center">Downloads</p>
+            <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+        </div>
+        <div class="m-2 p-4">
+            <div class="flex items-center justify-between text-lg bg-white rounded-full relative border-2 border-gray-200 overflow-hidden">
+               
+                <ion-icon name="person-circle-outline" class=" p-3 text-2xl"></ion-icon>
+                <input type="text" class="w-full px-3 py-3 pl-0 focus:outline-0" placeholder="search">
+                <ion-icon name="search-outline" class=" p-3 text-2xl"></ion-icon>
+            </div>
+        </div>
+        <div class="m-2 p-4">
+            <div class="p-[1rem] download">
+                <div class="flex items-center justify-between ">
+                    <p class="py-2 text-lg" id='state'>com.file.app downloading...</p>
+                    <span id='parcent'>0%</span>
+                </div>
+                <div class="prograss h-[4px]">
+                    <div id="prograss-fill">
+                    </div>
+                </div>
+                <div class="flex items-center justify-between py-3">
+                    <div>
+                        <span id="base"></span>
+                        <span class='text-orange-600' id="fake"></span>
+                    </div>
+                    <span id="info"></span>
+                </div>
+            </div>
+        </div>
+        <ul class="absolute bottom-0 w-full bg-[dodgerblue] flex items-center justify-between px-6">
+            <li class=" flex flex-col justify-center items-center text-white text-2xl tab">
+                <div class='test'>
+                    <ion-icon class="icon p-4 rounded-full " name="home-outline"></ion-icon>
+                </div>
+                <span class="lable"> Home </span>
+            </li>
+            <li class=" flex flex-col justify-center items-center text-white text-2xl tab">
+                <div class='test'>
+                    <ion-icon class="icon p-4 rounded-full " name="albums-outline"></ion-icon>
+                </div>
+                <span class="lable"> Tabs </span>
+            </li>
+            <li class=" flex flex-col justify-center items-center text-white text-2xl tab">
+                <div class='test'>
+                    <ion-icon class="icon p-4 rounded-full " name="download-outline"></ion-icon>
+                </div>
+                <span class="lable"> Downloads </span>
+            </li>
+            <li class=" flex flex-col justify-center items-center text-white text-2xl tab">
+                <div class='test'>
+                    <ion-icon class="icon p-4 rounded-full " name="folder-outline"></ion-icon>
+                </div>
+                <span class="lable"> Files </span>
+            </li>
+            <li class=" flex flex-col justify-center items-center text-white text-2xl tab">
+                <div class="test">
+                    <ion-icon class="icon p-4 rounded-full " name="apps-outline"></ion-icon>
+                    <div />
+                    <span class="lable"> More </span>
+            </li>
+        </ul>
+
+    </div>
+    <!--  <h1> Get A Random Image of Dog</h1>
+   <div class="imageBox">
+       <img src="" id='fakeImage' alt="dogImage">
+   </div> -->
+
+    <!--     <img id='fakeImage' src='https://picsum.photos/200/300?random=1' alt="dogIMage">  -->
+</body>
+<script src="main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>
