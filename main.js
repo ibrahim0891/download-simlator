@@ -21,14 +21,15 @@ const state = document.getElementById('state')
 const btn = document.getElementById('startDownload')
 const prograss = document.getElementById('prograss-fill')
 const parcent = document.getElementById('parcent')
-let fileSize = mbTOkb(getRandomNumber(9, 16))
+
+let fileSize = mbTOkb(getRandomNumber(7,14))
 
 var downloaded = 0
 var temp;
 var isDone = false
 
 let exe = () => {
-    var totalSpeed = getRandomNumber(400, 500)
+    var totalSpeed = getRandomNumber(400,600)
     var baseSpeed = getRandomNumber(300, totalSpeed - 50)
     var fakeSpeed = totalSpeed - baseSpeed
     base.innerText = baseSpeed + 'KB/s+'
@@ -53,10 +54,9 @@ window.addEventListener('load', function() {
     var clear = setInterval(function() {
         exe()
         if (isDone) {
-            state.innerText = "Download finished!"
+            state.innerText = "Download finished! Now you may go."
             base.innerText = 0 + 'KB/s+'
             fake.innerText = 0 + 'KB/s'
-
             prograss.style.background = "mediumseagreen"
             info.innerText = kbTOmb(downloaded) - kbTOmb(temp) + 'MB/' + kbTOmb(fileSize) + 'MB'
             clearInterval(clear)
