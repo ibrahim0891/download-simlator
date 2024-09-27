@@ -61,5 +61,5 @@ window.addEventListener('load', function() {
             info.innerText = kbTOmb(downloaded) - kbTOmb(temp) + 'MB/' + kbTOmb(fileSize) + 'MB'
             clearInterval(clear)
         }
-    }, 1000)
+    }, 500)
 })
